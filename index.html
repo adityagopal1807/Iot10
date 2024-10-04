@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz on Real-Time Analytics in IoT and Fog Computing</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz on Real-Time Analytics in IoT and Fog Computing</h1>
+        <form id="quizForm">
+            <div class="question">
+                <p>1. What is the primary function of IoT?</p>
+                <label><input type="radio" name="q1" value="A"> A) To store data in the cloud</label><br>
+                <label><input type="radio" name="q1" value="B"> B) To enable physical devices to connect and exchange data</label><br>
+                <label><input type="radio" name="q1" value="C"> C) To provide user interfaces</label><br>
+                <label><input type="radio" name="q1" value="D"> D) To enhance gaming experiences</label><br>
+                <span class="result" id="result-q1"></span>
+            </div>
+
+            <div class="question">
+                <p>2. What does fog computing primarily focus on?</p>
+                <label><input type="radio" name="q2" value="A"> A) Centralizing data processing</label><br>
+                <label><input type="radio" name="q2" value="B"> B) Distributed computing at the edge of the network</label><br>
+                <label><input type="radio" name="q2" value="C"> C) Increasing cloud storage</label><br>
+                <label><input type="radio" name="q2" value="D"> D) Reducing the number of connected devices</label><br>
+                <span class="result" id="result-q2"></span>
+            </div>
+
+            <div class="question">
+                <p>3. Which challenge does fog computing address in traditional IoT solutions?</p>
+                <label><input type="radio" name="q3" value="A"> A) Data visualization</label><br>
+                <label><input type="radio" name="q3" value="B"> B) Latency and bandwidth issues</label><br>
+                <label><input type="radio" name="q3" value="C"> C) User interface design</label><br>
+                <label><input type="radio" name="q3" value="D"> D) Device manufacturing</label><br>
+                <span class="result" id="result-q3"></span>
+            </div>
+
+            <div class="question">
+                <p>4. What is real-time analytics in IoT?</p>
+                <label><input type="radio" name="q4" value="A"> A) Analyzing historical data</label><br>
+                <label><input type="radio" name="q4" value="B"> B) Processing data with significant delays</label><br>
+                <label><input type="radio" name="q4" value="C"> C) Analyzing data as it arrives without delay</label><br>
+                <label><input type="radio" name="q4" value="D"> D) Storing data for future analysis</label><br>
+                <span class="result" id="result-q4"></span>
+            </div>
+
+            <div class="question">
+                <p>5. Why is real-time analytics important in IoT?</p>
+                <label><input type="radio" name="q5" value="A"> A) It increases storage capacity</label><br>
+                <label><input type="radio" name="q5" value="B"> B) It allows for immediate decision-making</label><br>
+                <label><input type="radio" name="q5" value="C"> C) It reduces power consumption</label><br>
+                <label><input type="radio" name="q5" value="D"> D) It simplifies device connectivity</label><br>
+                <span class="result" id="result-q5"></span>
+            </div>
+
+            <div class="question">
+                <p>6. Which of the following is NOT a benefit of real-time analytics?</p>
+                <label><input type="radio" name="q6" value="A"> A) Enhanced operational efficiency</label><br>
+                <label><input type="radio" name="q6" value="B"> B) Improved decision-making</label><br>
+                <label><input type="radio" name="q6" value="C"> C) Increased data storage costs</label><br>
+                <label><input type="radio" name="q6" value="D"> D) Predictive maintenance</label><br>
+                <span class="result" id="result-q6"></span>
+            </div>
+
+            <div class="question">
+                <p>7. What is the perception layer in IoT architecture responsible for?</p>
+                <label><input type="radio" name="q7" value="A"> A) Data transmission</label><br>
+                <label><input type="radio" name="q7" value="B"> B) Collecting data from the physical world</label><br>
+                <label><input type="radio" name="q7" value="C"> C) Data processing and storage</label><br>
+                <label><input type="radio" name="q7" value="D"> D) Providing value-added services</label><br>
+                <span class="result" id="result-q7"></span>
+            </div>
+
+            <div class="question">
+                <p>8. In the transport layer of IoT, what is primarily used for data transmission?</p>
+                <label><input type="radio" name="q8" value="A"> A) Sensors</label><br>
+                <label><input type="radio" name="q8" value="B"> B) Application servers</label><br>
+                <label><input type="radio" name="q8" value="C"> C) Connectivity infrastructure (Wi-Fi, cellular, Bluetooth)</label><br>
+                <label><input type="radio" name="q8" value="D"> D) Data analytics tools</label><br>
+                <span class="result" id="result-q8"></span>
+            </div>
+
+            <div class="question">
+                <p>9. What does SOA stand for in the context of IoT?</p>
+                <label><input type="radio" name="q9" value="A"> A) Standardized Operating Architecture</label><br>
+                <label><input type="radio" name="q9" value="B"> B) Service-Oriented Architecture</label><br>
+                <label><input type="radio" name="q9" value="C"> C) Secure Online Application</label><br>
+                <label><input type="radio" name="q9" value="D"> D) Software Optimization Algorithm</label><br>
+                <span class="result" id="result-q9"></span>
+            </div>
+
+            <div class="question">
+                <p>10. Which of the following describes a service in SOA?</p>
+                <label><input type="radio" name="q10" value="A"> A) A physical device</label><br>
+                <label><input type="radio" name="q10" value="B"> B) A discrete unit of functionality that can be accessed remotely</label><br>
+                <label><input type="radio" name="q10" value="C"> C) A data storage solution</label><br>
+                <label><input type="radio" name="q10" value="D"> D) A networking protocol</label><br>
+                <span class="result" id="result-q10"></span>
+            </div>
+
+            <div class="question">
+                <p>11. One of the key benefits of SOA is:</p>
+                <label><input type="radio" name="q11" value="A"> A) Increased code redundancy</label><br>
+                <label><input type="radio" name="q11" value="B"> B) Faster time to market</label><br>
+                <label><input type="radio" name="q11" value="C"> C) Complicated maintenance</label><br>
+                <label><input type="radio" name="q11" value="D"> D) Vendor lock-in</label><br>
+                <span class="result" id="result-q11"></span>
+            </div>
+
+            <div class="question">
+                <p>12. How does SOA promote efficient maintenance?</p>
+                <label><input type="radio" name="q12" value="A"> A) By creating large monolithic services</label><br>
+                <label><input type="radio" name="q12" value="B"> B) By promoting smaller, modular services</label><br>
+                <label><input type="radio" name="q12" value="C"> C) By increasing code complexity</label><br>
+                <label><input type="radio" name="q12" value="D"> D) By standardizing hardware requirements</label><br>
+                <span class="result" id="result-q12"></span>
+            </div>
+
+            <div class="question">
+                <p>13. What is the main role of an API in IoT?</p>
+                <label><input type="radio" name="q13" value="A"> A) To provide user authentication</label><br>
+                <label><input type="radio" name="q13" value="B"> B) To gather and transfer data between applications</label><br>
+                <label><input type="radio" name="q13" value="C"> C) To design hardware</label><br>
+                <label><input type="radio" name="q13" value="D"> D) To manage network traffic</label><br>
+                <span class="result" id="result-q13"></span>
+            </div>
+
+            <div class="question">
+                <p>14. APIs can instruct connected devices to:</p>
+                <label><input type="radio" name="q14" value="A"> A) Generate more data</label><br>
+                <label><input type="radio" name="q14" value="B"> B) Perform specific actions remotely</label><br>
+                <label><input type="radio" name="q14" value="C"> C) Store data locally</label><br>
+                <label><input type="radio" name="q14" value="D"> D) Enhance user interfaces</label><br>
+                <span class="result" id="result-q14"></span>
+            </div>
+
+            <div class="question">
+                <p>15. What is a significant security challenge in IoT?</p>
+                <label><input type="radio" name="q15" value="A"> A) Lack of cloud storage</label><br>
+                <label><input type="radio" name="q15" value="B"> B) Device compatibility</label><br>
+                <label><input type="radio" name="q15" value="C"> C) Connecting numerous devices increases vulnerability</label><br>
+                <label><input type="radio" name="q15" value="D"> D) High energy consumption</label><br>
+                <span class="result" id="result-q15"></span>
+            </div>
+
+            <div class="question">
+                <p>16. Device compatibility in IoT ecosystems can be challenging due to:</p>
+                <label><input type="radio" name="q16" value="A"> A) Similarity in device functionalities</label><br>
+                <label><input type="radio" name="q16" value="B"> B) Diverse devices from various manufacturers</label><br>
+                <label><input type="radio" name="q16" value="C"> C) Increased user adoption</label><br>
+                <label><input type="radio" name="q16" value="D"> C) Reduced data volume</label><br>
+                <span class="result" id="result-q16"></span>
+            </div>
+
+            <div class="question">
+                <p>17. Which challenge relates to the number of connected devices affecting performance?</p>
+                <label><input type="radio" name="q17" value="A"> A) Device compatibility</label><br>
+                <label><input type="radio" name="q17" value="B"> B) Bandwidth constraints</label><br>
+                <label><input type="radio" name="q17" value="C"> C) Security risks</label><br>
+                <label><input type="radio" name="q17" value="D"> D) Lack of interoperability standards</label><br>
+                <span class="result" id="result-q17"></span>
+            </div>
+
+            <div class="question">
+                <p>18. Interoperability in IoT refers to:</p>
+                <label><input type="radio" name="q18" value="A"> A) The ability of devices to operate independently</label><br>
+                <label><input type="radio" name="q18" value="B"> B) The ability of different systems to work together seamlessly</label><br>
+                <label><input type="radio" name="q18" value="C"> C) The integration of APIs into applications</label><br>
+                <label><input type="radio" name="q18" value="D"> D) The optimization of cloud storage</label><br>
+                <span class="result" id="result-q18"></span>
+            </div>
+
+            <div class="question">
+                <p>19. Scalability in IoT means:</p>
+                <label><input type="radio" name="q19" value="A"> A) The system can only handle a limited number of devices</label><br>
+                <label><input type="radio" name="q19" value="B"> B) The system can handle increasing workloads or users without decline in performance</label><br>
+                <label><input type="radio" name="q19" value="C"> C) The system only processes data at specific intervals</label><br>
+                <label><input type="radio" name="q19" value="D"> D) The system is designed for a single manufacturer’s devices</label><br>
+                <span class="result" id="result-q19"></span>
+            </div>
+
+            <div class="question">
+                <p>20. Reliability in IoT refers to:</p>
+                <label><input type="radio" name="q20" value="A"> A) The ability to process data rapidly</label><br>
+                <label><input type="radio" name="q20" value="B"> B) The ability to maintain consistent performance over time</label><br>
+                <label><input type="radio" name="q20" value="C"> C) The ability to connect to multiple networks</label><br>
+                <label><input type="radio" name="q20" value="D"> D) The ability to reduce power consumption</label><br>
+                <span class="result" id="result-q20"></span>
+            </div>
+
+            <div class="question">
+                <p>21. Power management in IoT devices is crucial for:</p>
+                <label><input type="radio" name="q21" value="A"> A) Increasing data transmission speed</label><br>
+                <label><input type="radio" name="q21" value="B"> B) Ensuring long-lasting operation and minimizing maintenance</label><br>
+                <label><input type="radio" name="q21" value="C"> C) Enhancing user experience</label><br>
+                <label><input type="radio" name="q21" value="D"> D) Expanding network coverage</label><br>
+                <span class="result" id="result-q21"></span>
+            </div>
+
+            <div class="question">
+                <p>22. Cost management in IoT deployments involves:</p>
+                <label><input type="radio" name="q22" value="A"> A) Reducing the number of connected devices</label><br>
+                <label><input type="radio" name="q22" value="B"> B) Balancing deployment costs with expected benefits</label><br>
+                <label><input type="radio" name="q22" value="C"> C) Ignoring initial investment for long-term gains</label><br>
+                <label><input type="radio" name="q22" value="D"> D) Focusing only on hardware expenses</label><br>
+                <span class="result" id="result-q22"></span>
+            </div>
+
+            <div class="question">
+                <p>23. Which interoperability standard is commonly used in IoT?</p>
+                <label><input type="radio" name="q23" value="A"> A) HTTP</label><br>
+                <label><input type="radio" name="q23" value="B"> B) FTP</label><br>
+                <label><input type="radio" name="q23" value="C"> C) MQTT</label><br>
+                <label><input type="radio" name="q23" value="D"> D) SSL</label><br>
+                <span class="result" id="result-q23"></span>
+            </div>
+
+            <div class="question">
+                <p>24. What is the primary challenge related to device updates in IoT security?</p>
+                <label><input type="radio" name="q24" value="A"> A) Ensuring high-speed data transmission</label><br>
+                <label><input type="radio" name="q24" value="B"> B) Regularly updating each connected device</label><br>
+                <label><input type="radio" name="q24" value="C"> C) Maintaining user privacy</label><br>
+                <label><input type="radio" name="q24" value="D"> D) Integrating devices from different manufacturers</label><br>
+                <span class="result" id="result-q24"></span>
+            </div>
+
+            <div class="question">
+                <p>25. What is a major privacy concern for IoT users?</p>
+                <label><input type="radio" name="q25" value="A"> A) Data redundancy</label><br>
+                <label><input type="radio" name="q25" value="B"> B) Excessive data storage costs</label><br>
+                <label><input type="radio" name="q25" value="C"> C) Unauthorized access to personal data</label><br>
+                <label><input type="radio" name="q25" value="D"> D) Slow data processing</label><br>
+                <span class="result" id="result-q25"></span>
+            </div>
+
+            <button onclick="submitQuiz()">Submit Quiz</button>
+        </div>
+
+        <script>
+            function submitQuiz() {
+                let score = 0;
+
+                // Array of correct answers
+                const correctAnswers = [
+                    "B", "B", "B", "C", "B", 
+                    "C", "B", "C", "B", "B", 
+                    "B", "B", "B", "B", "C", 
+                    "B", "B", "B", "B", "B", 
+                    "B", "B", "C", "B", "C"
+                ];
+
+                // Check each question
+                for (let i = 1; i <= 25; i++) {
+                    const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+                    if (selectedOption && selectedOption.value === correctAnswers[i - 1]) {
+                        score++;
+                        document.getElementById(`result-q${i}`).innerText = "Correct!";
+                        document.getElementById(`result-q${i}`).style.color = "green";
+                    } else {
+                        document.getElementById(`result-q${i}`).innerText = "Incorrect! Correct answer: " + correctAnswers[i - 1];
+                        document.getElementById(`result-q${i}`).style.color = "red";
+                    }
+                }
+
+                alert("Your total score is: " + score + "/25");
+            }
+        </script>
+    </body>
+</html>
