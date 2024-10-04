@@ -239,33 +239,40 @@
         </div>
 
         <script>
-            function submitQuiz() {
-                let score = 0;
+    function submitQuiz() {
+        let score = 0;
+        const totalQuestions = 25; // total number of questions
 
-                // Array of correct answers
-                const correctAnswers = [
-                    "B", "B", "B", "C", "B", 
-                    "C", "B", "C", "B", "B", 
-                    "B", "B", "B", "B", "C", 
-                    "B", "B", "B", "B", "B", 
-                    "B", "B", "C", "B", "C"
-                ];
+        // Array of correct answers
+        const correctAnswers = [
+            "B", "B", "B", "C", "B", 
+            "C", "B", "C", "B", "B", 
+            "B", "B", "B", "B", "C", 
+            "B", "B", "B", "B", "B", 
+            "B", "B", "C", "B", "C"
+        ];
 
-                // Check each question
-                for (let i = 1; i <= 25; i++) {
-                    const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
-                    if (selectedOption && selectedOption.value === correctAnswers[i - 1]) {
-                        score++;
-                        document.getElementById(`result-q${i}`).innerText = "Correct!";
-                        document.getElementById(`result-q${i}`).style.color = "green";
-                    } else {
-                        document.getElementById(`result-q${i}`).innerText = "Incorrect! Correct answer: " + correctAnswers[i - 1];
-                        document.getElementById(`result-q${i}`).style.color = "red";
-                    }
+        // Check each question
+        for (let i = 1; i <= totalQuestions; i++) {
+            const selectedOption = document.querySelector(`input[name="q${i}"]:checked`);
+            const resultSpan = document.getElementById(`result-q${i}`);
+            if (selectedOption) {
+                if (selectedOption.value === correctAnswers[i - 1]) {
+                    score++;
+                    resultSpan.innerText = "Correct!";
+                    resultSpan.className = "result correct";
+                } else {
+                    resultSpan.innerText = `Incorrect! Correct answer: ${correctAnswers[i - 1]}`;
+                    resultSpan.className = "result incorrect";
                 }
-
-                alert("Your total score is: " + score + "/25");
+            } else {
+                resultSpan.innerText = "No answer selected.";
+                resultSpan.className = "result incorrect";
             }
-        </script>
+        }
+
+        alert(`Your total score is: ${score}/${totalQuestions}`);
+    }
+</script>
     </body>
 </html>
